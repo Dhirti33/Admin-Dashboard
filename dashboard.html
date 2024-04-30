@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+   
+</head>
+    <body>
+        <!--Created the dashboard page-->
+        <div id="dash-page">
+            <!--The dashboard page is divided into two -->
+            <!--the left side of the page -->
+            <div class="dashPageLeft">
+                <div class="dashPageLeft-one">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="dashPageLeft-two">
+                    <div class="link" id="Home">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/igpbsrza.json"
+                            trigger="morph"
+                            colors="primary:#ffffff"
+                            state="morph-2"
+                            style="width:2rem;height:2rem">
+                        </lord-icon>
+                        <a href="http://">Home</a>
+                    </div>
+                    <div class="link" id="Profile">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/dklbhvrt.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:2rem;height:2rem">
+                        </lord-icon>
+                        <a href="http://">Profile</a>
+                    </div>
+                    <div class="link" id="Message">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/uvextprq.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:2rem;height:2rem">
+                        </lord-icon>
+                        <a href="http://">Message</a>
+                    </div>
+                    <div class="link" id="History">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/lefmybnc.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:2rem;height:2rem">
+                        </lord-icon>
+                        <a href="http://">History</a>
+                    </div>
+                    <div class="link" id="Tasks">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/aslgozpd.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:2rem;height:2rem">
+                        </lord-icon>
+                        <a href="http://">Tasks</a>
+                    </div>
+                    <div class="link" id="Communities">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/yrxnwkni.json"
+                            trigger="hover"
+                            colors="primary:#ffffff,secondary:#ffffff"
+                            stroke="120"
+                            style="width:2rem;height:2rem">
+                        </lord-icon>
+                        <a href="http://">Communities</a>
+                    </div>
+                    
+                </div>
+                <div class="dashPageLeft-three">
+                    <div class="link" id="Settings">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/ryyjawhw.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:2rem;height:2rem">
+                        </lord-icon>
+                        <a href="http://">Settings</a>
+                    </div>
+                    <div class="link" id="Supports">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/njjuilvq.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:2rem;height:2rem">
+                        </lord-icon>
+                        <a href="http://">Supports</a>
+                    </div>
+                    <div class="link" id="Privacy">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/yyecauzv.json"
+                            trigger="hover"
+                            stroke="110"
+                            colors="primary:#ffffff,secondary:#ffffff"
+                            style="width:2rem;height:2rem">
+                        </lord-icon>
+                        <a href="http://">Privacy</a>
+                    </div>
+                </div>
+            </div>
+            <!--created the right side of the page-->
+            <div class="dashPageRight">
+                <!--the right side is divided into two -->
+                <!--Created the header side of the right page--> 
+                <div class="dashPageRight-head" id="dashPageRight-head">
+                    <!--the header section is divided into two UP and DOWN-->
+                    <!--Created the up part of the header-->
+                    <div class="headUp">
+                        <!--The left part of the header UP-->
+                        <div class="upLeft">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/pvbutfdk.json"
+                                trigger="hover"
+                                style="width:2rem;height:2rem">
+                            </lord-icon>
+                            <input type="text" placeholder="Search.." class="search">
+                        </div>
+                        <!-- The right part of the header UP-->
+                        <div class="upRight">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/ndydpcaq.json"
+                                trigger="hover"
+                                style="width:2rem;height:2rem">
+                            </lord-icon>
+                            <img src="/IMG-20220321-WA0057-1.jpg" alt="" />
+                            <h3>Lomoko Desmond</h3>
+                        </div>
+                    </div>
+                    <!-- Created the Down part of the header section-->
+                    <div class="headBottom">
+                        <!--Created the left part of the header down-->
+                        <div class="bottomLeft">
+                            <div class="image">
+                                <img src="/IMG-20220321-WA0057-1.jpg" alt="" />
+                            </div>
+                            <div class="name">
+                                <h6>Hi there,</h6>
+                                <h2>Lomoko Desmond(@pRyst)</h2>
+                            </div>
+                        </div>
+                        <!-- Created the right part of the header Down-->
+                        <div class="bottomRight">
+                            <button>New</button>
+                            <button>Upload</button>
+                            <button>Share</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Created the body of the right page of the dashboard-->
+                <div class="dashPageRight-body" id="dashPageRight-body">
+                    <!-- The body is divided into two right and left-->    
+                    <!-- Created the left side of the body-->              
+                    <div class="bodyLeft">
+                        <h6>Your Project</h6>
+                        <!-- Created the card containers-->
+                        <div class="cardContainer">
+                            <div class="card">
+                                <h5>Super cool project</h5>
+                                <p>
+                                Sed tempus ut lacus ut scelerisque. Suspendisses sollicitudin
+                                nibh erat, id ficilisis felis accumsan nec.
+                                </p>
+                                <div class="icons">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/whttoese.json"
+                                        trigger="morph"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/tyounuzx.json"
+                                        trigger="hover"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2.5rem;height:2.5rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/iswjnpyk.json"
+                                        trigger="morph"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h5>Super cool project</h5>
+                                <p>
+                                Sed tempus ut lacus ut scelerisque. Suspendisses sollicitudin
+                                nibh erat, id ficilisis felis accumsan nec.
+                                </p>
+                                <div class="icons">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/whttoese.json"
+                                        trigger="morph"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/tyounuzx.json"
+                                        trigger="hover"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2.5rem;height:2.5rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/iswjnpyk.json"
+                                        trigger="morph"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h5>Super cool project</h5>
+                                <p>
+                                Sed tempus ut lacus ut scelerisque. Suspendisses sollicitudin
+                                nibh erat, id ficilisis felis accumsan nec.
+                                </p>
+                                <div class="icons">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/whttoese.json"
+                                        trigger="morph"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/tyounuzx.json"
+                                        trigger="hover"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2.5rem;height:2.5rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/iswjnpyk.json"
+                                        trigger="morph"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h5>Super cool project</h5>
+                                <p>
+                                Sed tempus ut lacus ut scelerisque. Suspendisses sollicitudin
+                                nibh erat, id ficilisis felis accumsan nec.
+                                </p>
+                                <div class="icons">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/whttoese.json"
+                                        trigger="morph"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/tyounuzx.json"
+                                        trigger="hover"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2.5rem;height:2.5rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/iswjnpyk.json"
+                                        trigger="morph"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h5>Super cool project</h5>
+                                <p>
+                                Sed tempus ut lacus ut scelerisque. Suspendisses sollicitudin
+                                nibh erat, id ficilisis felis accumsan nec.
+                                </p>
+                                <div class="icons">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/whttoese.json"
+                                        trigger="morph"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/tyounuzx.json"
+                                        trigger="hover"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2.5rem;height:2.5rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/iswjnpyk.json"
+                                        trigger="morph"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h5>Super cool project</h5>
+                                <p>
+                                    Sed tempus ut lacus ut scelerisque. Suspendisses sollicitudin
+                                    nibh erat, id ficilisis felis accumsan nec.
+                                </p>
+                                <div class="icons">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/whttoese.json"
+                                        trigger="morph"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/tyounuzx.json"
+                                        trigger="hover"
+                                        colors="primary:#000000,secondary:#000000"
+                                        stroke="100"
+                                        style="width:2.5rem;height:2.5rem">
+                                    </lord-icon>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/iswjnpyk.json"
+                                        trigger="morph"
+                                        style="width:2rem;height:2rem">
+                                    </lord-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Created the right side of the body -->
+                    <div class="bodyRight">
+                        <!-- Created the announcement card-->
+                        <div class="cardAnnouncement">
+                            <h6>Announcement</h6>
+                            <div class="announcement">
+                                <div class="announcementOne">
+                                    <h4>Site Maintenance</h4>
+                                    <p>Vestabullum condimentum tellus lacus, in accumsan elit maximus ac. Donec henderit sodales congue</p>
+                                </div>
+                                <div class="announcementOne">
+                                    <h4>Community Share Date</h4>
+                                    <p>Vestabullum condimentum tellus lacus, in accumsan elit maximus ac. Donec henderit sodales congue</p>
+                                </div>
+                                <div class="announcementTwo">
+                                    <h4>Update Privacy Policy</h4>
+                                    <p>Vestabullum condimentum tellus lacus, in accumsan elit maximus ac. Donec henderit sodales congue</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Created the trending announcement-->
+                        <div class="cardTrending">
+                            <h6>Trending</h6>
+                            <div class="trending">
+                                <div class="trendOne">
+                                    <img src="/IMG-20220321-WA0057-1.jpg" alt="">
+                                    <div class="one">
+                                        <h6>@Lomoko</h6>
+                                        <p>World Peace Builder</p>
+                                    </div>
+                                </div>
+                                <div class="trendOne">
+                                    <img src="/IMG-20220321-WA0057-1.jpg" alt="">
+                                    <div class="one">
+                                        <h6>@Desmond</h6>
+                                        <p>Super Cool Project</p>
+                                    </div>
+                                </div>
+                                <div class="trendOne">
+                                    <img src="/IMG-20220321-WA0057-1.jpg" alt="">
+                                    <div class="one">
+                                        <h6>@Nii</h6>
+                                        <p>Life Changing App</p>
+                                    </div>
+                                </div>
+                                <div class="trendOne">
+                                    <img src="/IMG-20220321-WA0057-1.jpg" alt="">
+                                    <div class="one">
+                                        <h6>@Tackie</h6>
+                                        <p>No Traffic Maker</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

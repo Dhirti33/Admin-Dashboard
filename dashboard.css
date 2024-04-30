@@ -1,0 +1,318 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*dash page*/
+#dash-page{
+    display: flex;
+    background-color: lightgray;
+}
+
+/*dash page left*/
+.dashPageLeft{
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: calc(1.2rem + 4vh);
+    gap: 2rem;
+    padding: 1rem;
+    background:blue;
+    position: relative;
+}
+.dashPageLeft-one{
+    color: beige;
+    font-size: clamp(0.8,4vh,2rem);
+}
+.dashPageLeft > h1,.link{
+    font-size: clamp(0.5rem,2.5vw,2rem);
+}
+.link:hover{
+    color: beige;
+    font-size: clamp(0.8,4vh,2rem);
+    text-shadow: 3px 0px 8px rgb(78, 78, 78);;
+}
+.dashPageLeft-two{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: clamp(0.8,4vh,2rem);
+}
+.dashPageLeft-two > .link{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    white-space: nowrap;
+    align-items: flex-end;
+    font-size: clamp(0.8,4vh,2rem);
+}
+.dashPageLeft-two > .link > a:link{
+    text-decoration: none;
+    color: beige;
+    font-size: large;
+    font-weight: bold;
+    height: fit-content;
+    line-height: 20px;
+}
+.dashPageLeft-three{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.dashPageLeft-three > .link{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-content: flex-start;
+
+}
+.dashPageLeft-three > .link > a:link{
+    text-decoration: none;
+    color: beige;
+    font-size: large;
+    font-weight: bold;
+    height: fit-content;
+    line-height: 20px;
+  
+}
+.dashPageLeft-three > .link > a{
+    align-self: flex-end;
+}
+
+/*dash page right*/
+.dashPageRight{
+    height: 100vh;
+    width: 85vw;
+    background-color: lightgrey;
+    overflow-y: scroll;
+}
+
+
+/*Styling dashboard page right head*/
+.dashPageRight-head{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 3px 0px 8px rgb(78, 78, 78);
+}
+/* The header is divided into two part Up and Down */
+/*Styling header top*/
+.headUp{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    white-space: nowrap;
+    height: fit-content;
+    line-height: 20px;
+
+}
+/* The search input */
+.headUp > .upLeft > input{
+    width: 40vw;
+    height: 4.5vh;
+    border-radius: 10rem;
+    padding-left: 0.75rem;
+
+}
+.headUp > .upLeft > input:hover{
+    width: 40vw;
+    height: 4.5vh;
+    border-radius: 10rem;
+    padding-left: 0.75rem;
+    box-shadow: 1px 1px 5px rgb(94, 93, 93);
+}
+/* The right part of the header Up part*/
+.headUp > .upRight{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-end;
+    
+}
+.headUp > .upRight > img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20%;
+
+}
+.headUp > .upRight > h3{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+/*Styling header bottom*/
+.headBottom{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    white-space: nowrap;
+    height: fit-content;
+    line-height: 20px;
+}
+/* left part of the header down*/
+.bottomLeft{
+    display: inline-flex;
+    gap: 1rem;
+}
+.bottomLeft > .name{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    height: fit-content;
+    line-height: 30px;
+}
+.image > img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 20%;
+}
+/* right part of the header */
+.bottomRight{
+    height: fit-content;
+    line-height: 20px;
+}
+.bottomRight > button{
+    width: 5.5vw;
+    height: 5vh;
+    background-color: blue;
+    border-radius: 30rem;
+    align-items: center;
+    height: fit-content;
+    line-height: 30px;
+}
+.bottomRight > button:hover{
+    width: 5.5vw;
+    height: 5vh;
+    background-color: blue;
+    border-radius: 30rem;
+    align-items: center;
+    height: fit-content;
+    line-height: 30px;
+    box-shadow: 3px 3px 8px rgb(78, 78, 78);;
+}
+
+/* the body of the page is divided into two part right and left*/
+/*Styling dashboard page right body*/
+.dashPageRight-body{
+    padding: 1rem;
+    display: flex;
+    
+}
+/* styling the left part of the body*/
+.bodyLeft{
+    width: 65vw;
+}
+.bodyLeft > h6{
+    font-size: large;
+    font-weight: bolder;
+}
+/* creating the grid containers*/
+.bodyLeft > .cardContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1em;
+    overflow-x: auto;
+   
+}
+/* styling each grid container 'card'*/
+.cardContainer > .card{
+    height: 30vh;
+    width: clamp(1rem,50vw,19rem);
+    justify-content: center;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 8px rgb(153, 150, 150);
+    font-size: clamp(0.5rem,2.5vh,2rem);
+}
+.cardContainer > .card > h5{
+    font-size: large;
+    font-weight: bold;
+}
+.cardContainer > .card > h5,p{
+    font-size: clamp(0.5rem,2.5vh,2rem);
+}
+.cardContainer > .card > .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: fit-content;
+    line-height: 10px;
+}
+/* created a grid for the right side */
+.bodyRight{
+    padding-left: 0.5rem;
+    width: 15rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    gap: 0.5rem;
+    
+}
+/* styling the announcement card*/
+.cardAnnouncement{
+    padding: 0.5rem;
+    
+}
+.cardAnnouncement > h6{
+    font-size: large;
+    font-weight: bolder;
+
+}
+.cardAnnouncement > .announcement{
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 8px rgb(153, 150, 150);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: clamp(1rem,20vw,14rem);
+}
+.cardAnnouncement > .announcement > .announcementOne{
+    border-bottom: 1px solid rgb(114, 112, 112);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+/*styling the trending card*/
+.cardTrending{
+    padding: 0.5rem;
+}
+.cardTrending > h6{
+    font-size: large;
+    font-weight: bolder;
+}
+.cardTrending > .trending{
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 8px rgb(153, 150, 150);
+    padding: 0.5rem;
+    width: clamp(1rem,20vw,14rem);;
+    
+}
+.trending > .trendOne{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.trending > .trendOne > img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20%;
+}
+.trending > .trendOne > .one > p{
+    font-size: 0.8rem;
+}
